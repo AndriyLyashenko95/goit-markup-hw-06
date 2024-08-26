@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles-new.css" />
   </head>
   <body class="body">
     <!-- #region header -->
@@ -51,6 +51,85 @@
             </li>
           </ul>
         </address>
+        <button class="button-mob" type="button" data-menu-open>
+          <svg class="mob-menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="svg-mobile-image" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <a class="mobile-menu-list">Studio</a>
+            <a class="mobile-menu-list">Portfolio</a>
+            <a class="mobile-menu-list">Contacts</a>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mobile-item">
+              <li>
+                <a class="mobile-address-list" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mobile-address-list" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-socials">
+            <li class="mobile-socials-item">
+              <a
+                href="instagram.com"
+                target="_blank"
+                class="mobile-socials-link"
+              >
+                <svg class="mobile-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                href="instagram.com"
+                target="_blank"
+                class="mobile-socials-link"
+              >
+                <svg class="mobile-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                href="instagram.com"
+                target="_blank"
+                class="mobile-socials-link"
+              >
+                <svg class="mobile-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a
+                href="instagram.com"
+                target="_blank"
+                class="mobile-socials-link"
+              >
+                <svg class="mobile-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--#endregion header -->
@@ -637,4 +716,6 @@
       </div>
     </div>
   </body>
+  <script src="./java/menu.js"></script>
+  <script src="./java/modal.js"></script>
 </html>
