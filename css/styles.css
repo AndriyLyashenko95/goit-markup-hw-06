@@ -692,7 +692,7 @@ img {
   border-color: transparent;
 }
 .subscription {
-  padding-left: 80px;
+  margin-left: 80px;
 }
 .sub-text {
   font-weight: 500;
@@ -738,7 +738,6 @@ img {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin-left: 24px;
 }
 .sub-button:hover,
 :focus {
@@ -788,3 +787,28 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
+/* #region Media */
+@media (max-width: 1200px) {
+  .feature-container .section-box,
+  .team-container .team-frame,
+  .box-one .personal-box {
+    width: calc(33.333% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-container .section-box,
+  .team-container .team-frame,
+  .box-one .personal-box {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-container .section-box,
+  .team-container .team-frame,
+  .box-one .personal-box {
+    width: 100%;
+  }
+}
+/* #endregion Media */
