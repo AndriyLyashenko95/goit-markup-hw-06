@@ -273,7 +273,7 @@ img {
 /* #region one */
 .section-blue {
   background: #2e2f42;
-  padding: 72 0;
+  padding: 72px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -418,8 +418,8 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-item {
@@ -465,6 +465,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  justify-content: center;
   align-items: center;
   gap: 72px;
 }
@@ -679,6 +680,10 @@ input::placeholder {
   .container {
     max-width: 768px;
   }
+  .container-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .button-mob {
     display: none;
   }
@@ -694,6 +699,7 @@ input::placeholder {
     color: #434455;
     font-style: normal;
     display: flex;
+    padding: 12px;
     gap: 40px;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -776,8 +782,8 @@ input::placeholder {
     flex-basis: calc((100% - 24px) / 2);
   }
   .container-team-main {
-    padding-left: 108px;
-    padding-right: 108px;
+    /* padding-left: 108px;
+    padding-right: 108px; */
   }
   .team-container {
     gap: 64px 24px;
@@ -787,6 +793,34 @@ input::placeholder {
   }
   .personal-box {
     width: calc(100% - 24px) / 2;
+  }
+  .footer {
+    padding-left: 108px;
+  }
+  .logo-box-footer {
+    display: inline-block;
+    justify-content: flex-start;
+  }
+  .social-media {
+    margin-left: 24px;
+    margin-bottom: 0;
+  }
+  .footer-social {
+    justify-content: flex-start;
+  }
+  .sub-text {
+    justify-content: flex-start;
+  }
+  .input-class {
+    min-width: 264px;
+  }
+  .form-class {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .footer-media {
+    display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -807,7 +841,12 @@ input::placeholder {
     letter-spacing: 0.02em;
     color: #434455;
     font-style: normal;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navigation {
+    display: flex;
+    gap: 40px;
   }
   .nav-box {
     flex-direction: row;
